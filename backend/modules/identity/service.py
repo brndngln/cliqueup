@@ -53,15 +53,13 @@ class AuthService:
         now = utc_now_iso()
         user_id = generate_id()
         
-        # Create user record
+        # Create user record - only include fields that have values
+        # (sparse indexes require fields to be absent, not null)
         user_data = {
             "id": user_id,
-            "email": request.email,
-            "phone_e164": request.phone_e164,
             "password_hash": hash_password(request.password),
             "dob": request.dob,
             "age_band": age_band,
-            "country_code": request.country_code,
             "status": UserStatus.ACTIVE.value,
             "display_name": request.display_name,
             "handle": request.handle.lower(),
@@ -69,6 +67,13 @@ class AuthService:
             "created_at": now,
             "updated_at": now,
         }
+        # Only add optional fields if they have values (for sparse indexes)
+        if request.email:
+            user_data["email"] = request.email
+        if request.phone_e164:
+            user_data["phone_e164"] = request.phone_e164
+        if request.country_code:
+            user_data["country_code"] = request.country_code
         
         await self.user_repo.create(user_data)
         
