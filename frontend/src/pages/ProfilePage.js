@@ -185,7 +185,7 @@ export default function ProfilePage() {
                 {/* Cover & Avatar */}
                 <div className="relative">
                     {/* Cover */}
-                    <div className="h-32 md:h-48 rounded-xl bg-gradient-to-br from-pink-500/30 via-gray-500/20 to-teal-500/30 overflow-hidden">
+                    <div className="h-32 md:h-48 rounded-xl bg-gradient-to-br from-pink-600/30 via-gray-500/20 to-teal-600/30 overflow-hidden">
                         {profile?.cover_url && (
                             <img src={profile.cover_url} alt="" className="w-full h-full object-cover" />
                         )}
