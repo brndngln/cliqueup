@@ -12,9 +12,9 @@
         --card-foreground: 0 0% 98%;
         --popover: 0 0% 5%;
         --popover-foreground: 0 0% 98%;
-        --primary: 330 85% 60%;
+        --primary: 330 80% 50%;
         --primary-foreground: 0 0% 100%;
-        --secondary: 174 72% 50%;
+        --secondary: 174 65% 40%;
         --secondary-foreground: 0 0% 100%;
         --muted: 0 0% 15%;
         --muted-foreground: 0 0% 60%;
@@ -24,13 +24,13 @@
         --destructive-foreground: 0 0% 98%;
         --border: 0 0% 18%;
         --input: 0 0% 15%;
-        --ring: 330 85% 60%;
+        --ring: 330 80% 50%;
         --radius: 0.75rem;
-        --chart-1: 330 85% 60%;
-        --chart-2: 174 72% 50%;
+        --chart-1: 330 80% 50%;
+        --chart-2: 174 65% 40%;
         --chart-3: 0 0% 50%;
-        --chart-4: 330 70% 70%;
-        --chart-5: 174 60% 60%;
+        --chart-4: 330 70% 60%;
+        --chart-5: 174 55% 50%;
     }
 }
 
@@ -67,15 +67,15 @@
     }
     
     .text-gradient-social {
-        @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-cyan-400;
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-teal-400;
     }
     
     .text-gradient-dating {
-        @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-rose-400;
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-pink-500;
     }
     
     .text-gradient-brand {
-        @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-pink-300 to-teal-400;
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-pink-400 to-teal-500;
     }
     
     .glass {
@@ -87,15 +87,15 @@
     }
     
     .neon-glow {
-        box-shadow: 0 0 20px rgba(20, 184, 166, 0.5);
+        box-shadow: 0 0 20px rgba(13, 148, 136, 0.5);
     }
     
     .neon-glow-pink {
-        box-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+        box-shadow: 0 0 20px rgba(219, 39, 119, 0.5);
     }
     
     .neon-glow-turquoise {
-        box-shadow: 0 0 20px rgba(20, 184, 166, 0.5);
+        box-shadow: 0 0 20px rgba(13, 148, 136, 0.5);
     }
     
     .hover-lift {
