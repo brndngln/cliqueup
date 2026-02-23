@@ -106,7 +106,7 @@ class AuthService:
         timestamp: str
     ):
         """Create associated user records (profile, entitlements, meet access)."""
-        from ...core.database import Collections
+        from core.database import Collections
         
         # Profile
         profile = {
