@@ -408,7 +408,7 @@ def get_squad_cap(tier: str) -> int:
 
 # ==================== APP SETUP ====================
 
-app = FastAPI(title="NEXUS API", version="1.0.0")
+app = FastAPI(title="CliqUp API", version="1.0.0")
 api_router = APIRouter(prefix="/api")
 
 # ==================== AUTH ROUTES ====================
@@ -2068,7 +2068,7 @@ async def search_posts(
 
 @api_router.get("/", tags=["system"])
 async def root():
-    return {"message": "NEXUS API", "version": "1.0.0"}
+    return {"message": "CliqUp API", "version": "1.0.0"}
 
 @api_router.get("/health", tags=["system"])
 async def health():
