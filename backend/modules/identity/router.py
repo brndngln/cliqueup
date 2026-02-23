@@ -4,15 +4,15 @@ Identity module - API router for authentication endpoints.
 from fastapi import APIRouter, Depends, HTTPException, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
-from ...core.database import Database
-from ...core.security import get_current_user
-from .schemas import (
+from core.database import Database
+from core.security import get_current_user
+from modules.identity.schemas import (
     SignupRequest, 
     LoginRequest, 
     TokenResponse, 
     UserResponse
 )
-from .service import AuthService
+from modules.identity.service import AuthService
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 
