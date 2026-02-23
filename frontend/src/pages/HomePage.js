@@ -26,12 +26,12 @@ import { toast } from 'sonner';
 import { formatDistanceToNow } from 'date-fns';
 
 const REACTIONS = [
-    { type: 'like', icon: ThumbsUp, label: 'Like', color: 'text-blue-400' },
-    { type: 'love', icon: Heart, label: 'Love', color: 'text-red-400' },
+    { type: 'like', icon: ThumbsUp, label: 'Like', color: 'text-teal-400' },
+    { type: 'love', icon: Heart, label: 'Love', color: 'text-pink-500' },
     { type: 'laugh', icon: Laugh, label: 'Haha', color: 'text-yellow-400' },
-    { type: 'wow', icon: Smile, label: 'Wow', color: 'text-yellow-400' },
-    { type: 'sad', icon: Frown, label: 'Sad', color: 'text-yellow-400' },
-    { type: 'angry', icon: Angry, label: 'Angry', color: 'text-orange-400' },
+    { type: 'wow', icon: Smile, label: 'Wow', color: 'text-teal-400' },
+    { type: 'sad', icon: Frown, label: 'Sad', color: 'text-gray-400' },
+    { type: 'angry', icon: Angry, label: 'Angry', color: 'text-pink-600' },
 ];
 
 const PostCard = ({ post, onReact }) => {
