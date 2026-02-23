@@ -258,14 +258,14 @@ export default function ProfilePage() {
                         ) : (
                             <>
                                 <Button 
-                                    className={`rounded-full ${isFollowing ? 'bg-muted text-foreground' : ''}`}
+                                    className={`rounded-full ${isFollowing ? 'bg-gray-700 text-foreground' : 'bg-teal-600 hover:bg-teal-700'}`}
                                     onClick={handleFollow}
                                     data-testid="follow-btn"
                                 >
                                     {isFollowing ? 'Following' : 'Follow'}
                                 </Button>
                                 <Link to={`/messages`}>
-                                    <Button variant="outline" className="rounded-full">
+                                    <Button variant="outline" className="rounded-full border-pink-600 text-pink-400 hover:bg-pink-600/10">
                                         Message
                                     </Button>
                                 </Link>
@@ -288,28 +288,28 @@ export default function ProfilePage() {
                     {/* Stats */}
                     <div className="flex gap-6">
                         <div className="text-center">
-                            <p className="font-bold">{posts.length}</p>
+                            <p className="font-bold text-teal-400">{posts.length}</p>
                             <p className="text-sm text-muted-foreground">Posts</p>
                         </div>
-                        <Link to={`/profile/${targetUserId}/followers`} className="text-center hover:text-primary transition-colors">
-                            <p className="font-bold">{profile?.followers_count || 0}</p>
+                        <Link to={`/profile/${targetUserId}/followers`} className="text-center hover:text-pink-400 transition-colors">
+                            <p className="font-bold text-pink-400">{profile?.followers_count || 0}</p>
                             <p className="text-sm text-muted-foreground">Followers</p>
                         </Link>
-                        <Link to={`/profile/${targetUserId}/following`} className="text-center hover:text-primary transition-colors">
-                            <p className="font-bold">{profile?.following_count || 0}</p>
+                        <Link to={`/profile/${targetUserId}/following`} className="text-center hover:text-teal-400 transition-colors">
+                            <p className="font-bold text-teal-400">{profile?.following_count || 0}</p>
                             <p className="text-sm text-muted-foreground">Following</p>
                         </Link>
                     </div>
 
                     {/* User ID for invites (only show on own profile) */}
                     {isOwnProfile && (
-                        <Card className="glass-card p-4">
+                        <Card className="glass-card p-4 border-teal-600/20">
                             <div className="flex items-center justify-between">
                                 <div>
-                                    <p className="text-sm text-muted-foreground">Your User ID (for squad invites)</p>
+                                    <p className="text-sm text-teal-400">Your User ID (for squad invites)</p>
                                     <p className="font-mono text-sm truncate max-w-[200px]">{user?.id}</p>
                                 </div>
-                                <Button variant="outline" size="sm" className="rounded-full" onClick={copyUserId}>
+                                <Button variant="outline" size="sm" className="rounded-full border-teal-600 text-teal-400 hover:bg-teal-600/10" onClick={copyUserId}>
                                     {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
                                 </Button>
                             </div>
