@@ -60,7 +60,7 @@ export default function SignupPage() {
         <div className="min-h-screen bg-background flex">
             {/* Left side - Image */}
             <div className="hidden lg:block flex-1 relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 via-gray-500/10 to-teal-500/20" />
+                <div className="absolute inset-0 bg-gradient-to-br from-teal-600/20 via-gray-500/10 to-pink-600/20" />
                 <img
                     src="https://images.unsplash.com/photo-1616189221633-c3e3acb720af?w=1200&h=1600&fit=crop"
                     alt="Friends"
@@ -82,7 +82,7 @@ export default function SignupPage() {
                     </Link>
 
                     <div className="flex items-center gap-2 mb-8">
-                        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-teal-500 flex items-center justify-center">
+                        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-600 to-teal-600 flex items-center justify-center">
                             <Sparkles className="w-5 h-5 text-white" />
                         </div>
                         <span className="font-heading text-2xl font-bold">CliqUp</span>

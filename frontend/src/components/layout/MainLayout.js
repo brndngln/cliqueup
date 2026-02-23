@@ -74,7 +74,7 @@ export const MainLayout = ({ children }) => {
                 <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
                     {/* Logo */}
                     <Link to="/home" className="flex items-center gap-2">
-                        <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-pink-500 to-teal-500 flex items-center justify-center">
+                        <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-pink-600 to-teal-600 flex items-center justify-center">
                             <Sparkles className="w-4 h-4 text-white" />
                         </div>
                         <span className="font-heading text-xl font-bold hidden sm:block">CliqUp</span>
