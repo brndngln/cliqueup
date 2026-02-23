@@ -24,17 +24,17 @@ export default function LandingPage() {
         <div className="min-h-screen bg-background relative overflow-hidden">
             {/* Background effects */}
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-indigo-500/10 via-transparent to-transparent rounded-full blur-3xl" />
-                <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-pink-500/10 via-transparent to-transparent rounded-full blur-3xl" />
+                <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-pink-500/10 via-transparent to-transparent rounded-full blur-3xl" />
+                <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-teal-500/10 via-transparent to-transparent rounded-full blur-3xl" />
             </div>
 
             {/* Header */}
             <header className="relative z-10 flex items-center justify-between px-6 py-4 lg:px-12">
                 <div className="flex items-center gap-2">
-                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-teal-500 flex items-center justify-center">
                         <Sparkles className="w-5 h-5 text-white" />
                     </div>
-                    <span className="font-heading text-2xl font-bold">NEXUS</span>
+                    <span className="font-heading text-2xl font-bold">CliqUp</span>
                 </div>
                 <div className="flex items-center gap-4">
                     <Link to="/login">
@@ -56,12 +56,12 @@ export default function LandingPage() {
                     {/* Left content */}
                     <div className="space-y-8">
                         <div className="space-y-4">
-                            <span className="inline-block px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-sm font-medium">
+                            <span className="inline-block px-4 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-sm font-medium">
                                 Social + Dating, Unified
                             </span>
                             <h1 className="font-heading text-5xl md:text-7xl font-bold tracking-tight leading-none">
                                 Connect with your
-                                <span className="text-gradient-social"> Squad</span>
+                                <span className="text-gradient-brand"> Squad</span>
                             </h1>
                             <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
                                 The first platform where social meets dating. Build your squad, share your story, and discover connections that matter.
@@ -101,8 +101,8 @@ export default function LandingPage() {
                         <div className="grid grid-cols-2 gap-4">
                             {/* Feature Card 1 */}
                             <div className="glass-card p-6 space-y-4 hover-lift">
-                                <div className="w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center">
-                                    <Users className="w-6 h-6 text-indigo-400" />
+                                <div className="w-12 h-12 rounded-xl bg-teal-500/20 flex items-center justify-center">
+                                    <Users className="w-6 h-6 text-teal-400" />
                                 </div>
                                 <h3 className="font-heading text-lg font-semibold">Squad Dating</h3>
                                 <p className="text-sm text-muted-foreground">Match with other squads for group adventures and double dates.</p>
@@ -119,8 +119,8 @@ export default function LandingPage() {
 
                             {/* Feature Card 3 */}
                             <div className="glass-card p-6 space-y-4 hover-lift">
-                                <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center">
-                                    <MessageCircle className="w-6 h-6 text-purple-400" />
+                                <div className="w-12 h-12 rounded-xl bg-gray-500/20 flex items-center justify-center">
+                                    <MessageCircle className="w-6 h-6 text-gray-400" />
                                 </div>
                                 <h3 className="font-heading text-lg font-semibold">Social First</h3>
                                 <p className="text-sm text-muted-foreground">Share posts, stories, and videos with your network.</p>
@@ -152,7 +152,7 @@ export default function LandingPage() {
             {/* Footer */}
             <footer className="relative z-10 mt-24 py-8 border-t border-border/50">
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-wrap items-center justify-between gap-4">
-                    <p className="text-sm text-muted-foreground">© 2026 NEXUS. All rights reserved.</p>
+                    <p className="text-sm text-muted-foreground">© 2026 CliqUp. All rights reserved.</p>
                     <div className="flex gap-6">
                         <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy</a>
                         <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Terms</a>
