@@ -6,12 +6,12 @@ from datetime import datetime, timezone, timedelta
 from fastapi import HTTPException, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
-from ...core.database import Collections
-from ...core.config import settings
-from ...core.enums import NotificationType
-from ...utils.helpers import generate_id, utc_now_iso
-from .repository import PostRepository, ReactionRepository, CommentRepository, StoryRepository
-from .schemas import (
+from core.database import Collections
+from core.config import settings
+from core.enums import NotificationType
+from utils.helpers import generate_id, utc_now_iso
+from modules.social.repository import PostRepository, ReactionRepository, CommentRepository, StoryRepository
+from modules.social.schemas import (
     PostCreateRequest, PostResponse, ReactionRequest, ReactionResponse,
     CommentCreateRequest, CommentResponse,
     StoryCreateRequest, StoryResponse, StoryGroupResponse
