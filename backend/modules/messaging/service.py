@@ -5,11 +5,11 @@ from typing import Optional, List
 from fastapi import HTTPException, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
-from ...core.database import Collections
-from ...core.enums import ConversationType, NotificationType
-from ...utils.helpers import generate_id, utc_now_iso
-from .repository import ConversationRepository, ConversationMemberRepository, MessageRepository
-from .schemas import (
+from core.database import Collections
+from core.enums import ConversationType, NotificationType
+from utils.helpers import generate_id, utc_now_iso
+from modules.messaging.repository import ConversationRepository, ConversationMemberRepository, MessageRepository
+from modules.messaging.schemas import (
     ConversationResponse, ConversationMemberResponse, MessageResponse,
     MessageCreateRequest, ConversationCreateRequest
 )
