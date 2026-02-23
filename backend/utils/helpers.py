@@ -29,7 +29,7 @@ def compute_age(dob_str: str) -> int:
 
 def compute_age_band(dob_str: str) -> str:
     """Compute age band from date of birth."""
-    from ..core.enums import AgeBand
+    from core.enums import AgeBand
     age = compute_age(dob_str)
     if age < 13:
         return AgeBand.U13.value
@@ -40,8 +40,8 @@ def compute_age_band(dob_str: str) -> str:
 
 def get_squad_cap(tier: str) -> int:
     """Get squad member cap based on tier."""
-    from ..core.config import settings
-    from ..core.enums import DatingTier
+    from core.config import settings
+    from core.enums import DatingTier
     
     if tier == DatingTier.ELITE.value:
         return settings.ELITE_SQUAD_CAP
