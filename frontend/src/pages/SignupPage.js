@@ -47,7 +47,7 @@ export default function SignupPage() {
                 handle: handle.toLowerCase(),
                 dob: formattedDob,
             });
-            toast.success('Welcome to NEXUS!');
+            toast.success('Welcome to CliqUp!');
             navigate('/home');
         } catch (error) {
             toast.error(error.response?.data?.detail || 'Signup failed');

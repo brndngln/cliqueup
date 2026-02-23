@@ -60,12 +60,11 @@ const SquadDiscoveryCard = ({ squad, onSwipe, onVote }) => {
                     </div>
                 )}
                 
-                {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                 
                 {/* Squad indicator */}
                 <div className="absolute top-4 left-4 flex items-center gap-2">
-                    <Badge className="bg-pink-500/80 text-white border-0">
+                    <Badge className="bg-teal-500/80 text-white border-0">
                         <Users className="w-3 h-3 mr-1" />
                         {squad.member_count} members
                     </Badge>
@@ -388,7 +387,7 @@ export default function MeetPage() {
                 {/* Header */}
                 <div className="flex items-center justify-between">
                     <div>
-                        <h1 className="font-heading text-2xl font-bold text-gradient-dating">Meet</h1>
+                        <h1 className="font-heading text-2xl font-bold text-gradient-brand">Meet</h1>
                         <p className="text-sm text-muted-foreground">Squad-first dating</p>
                     </div>
                     <Dialog open={showCreateSquad} onOpenChange={setShowCreateSquad}>
