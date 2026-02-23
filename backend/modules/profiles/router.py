@@ -4,10 +4,10 @@ Profiles module - API router for profile endpoints.
 from fastapi import APIRouter, Depends, Query
 from typing import List
 
-from ...core.database import Database
-from ...core.security import get_current_user
-from .schemas import ProfileUpdateRequest, ProfileResponse, FollowResponse
-from .service import ProfileService
+from core.database import Database
+from core.security import get_current_user
+from modules.profiles.schemas import ProfileUpdateRequest, ProfileResponse, FollowResponse
+from modules.profiles.service import ProfileService
 
 router = APIRouter(prefix="/profiles", tags=["Profiles"])
 
