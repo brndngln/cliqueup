@@ -1,0 +1,200 @@
+{
+  "identity": {
+    "name": "NEXUS",
+    "persona": "E1 - The Anti-AI Designer",
+    "tone": "Electric, Immersive, Squad-First, Unapologetic",
+    "audience": "Gen Z (18-25) & Young Millennials",
+    "theme_mode": "dark"
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Syne, sans-serif",
+      "body": "Manrope, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@400;600;700;800&display=swap",
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-none",
+      "h2": "text-4xl md:text-5xl font-bold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-semibold tracking-tight",
+      "body_lg": "text-lg leading-relaxed",
+      "body_base": "text-base leading-relaxed text-muted-foreground",
+      "caption": "text-xs uppercase tracking-widest font-semibold text-muted-foreground"
+    }
+  },
+  "colors": {
+    "palette": {
+      "background": "#09090B",
+      "foreground": "#FAFAFA",
+      "card": "#18181B",
+      "card_foreground": "#FAFAFA",
+      "popover": "#09090B",
+      "popover_foreground": "#FAFAFA",
+      "primary": "#6366F1",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#EC4899",
+      "secondary_foreground": "#FFFFFF",
+      "muted": "#27272A",
+      "muted_foreground": "#A1A1AA",
+      "accent": "#27272A",
+      "accent_foreground": "#FAFAFA",
+      "destructive": "#EF4444",
+      "destructive_foreground": "#FAFAFA",
+      "border": "#27272A",
+      "input": "#27272A",
+      "ring": "#6366F1"
+    },
+    "gradients": {
+      "social_glow": "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500",
+      "dating_glow": "bg-gradient-to-br from-pink-500 to-rose-600",
+      "dark_glass": "bg-black/40 backdrop-blur-xl border-white/10"
+    },
+    "usage": {
+      "social_primary": "#6366F1",
+      "dating_primary": "#EC4899",
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444"
+    }
+  },
+  "layout": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "radius": {
+      "default": "0.75rem",
+      "sm": "0.5rem",
+      "lg": "1rem",
+      "full": "9999px"
+    },
+    "spacing": {
+      "section_padding": "py-16 md:py-24",
+      "component_gap": "gap-6 md:gap-8"
+    },
+    "grid_systems": {
+      "bento_feed": "grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[400px]",
+      "squad_grid": "grid grid-cols-2 md:grid-cols-4 gap-4"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 rounded-full font-semibold transition-all active:scale-95",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/90 h-11 px-8 rounded-full font-semibold transition-all active:scale-95",
+      "outline": "border-2 border-input bg-transparent hover:bg-accent hover:text-accent-foreground h-11 px-8 rounded-full font-semibold transition-all",
+      "ghost": "hover:bg-accent hover:text-accent-foreground h-10 px-4 rounded-full font-medium transition-all"
+    },
+    "cards": {
+      "base": "bg-card text-card-foreground rounded-xl border border-border/50 shadow-sm hover:shadow-md transition-all duration-300",
+      "glass": "bg-black/40 backdrop-blur-md border border-white/10 rounded-xl shadow-xl",
+      "interactive": "cursor-pointer hover:border-primary/50 hover:shadow-[0_0_30px_-10px_rgba(99,102,241,0.3)] transition-all duration-300"
+    },
+    "inputs": {
+      "base": "flex h-11 w-full rounded-lg border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-black/30 border border-white/10",
+    "neon_glow": "shadow-[0_0_20px_rgba(99,102,241,0.5)]",
+    "grain_overlay": "before:content-[''] before:fixed before:inset-0 before:bg-[url('/noise.png')] before:opacity-[0.03] before:pointer-events-none before:z-50",
+    "text_gradient": "bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60"
+  },
+  "motion": {
+    "page_transition": {
+      "initial": { "opacity": 0, "y": 20 },
+      "animate": { "opacity": 1, "y": 0 },
+      "exit": { "opacity": 0, "y": -20 },
+      "transition": { "duration": 0.3, "ease": "easeOut" }
+    },
+    "hover_lift": "hover:-translate-y-1 transition-transform duration-300 ease-out",
+    "tap_feedback": "active:scale-95 transition-transform duration-100"
+  },
+  "image_urls": {
+    "squads": [
+      {
+        "url": "https://images.unsplash.com/photo-1633465782007-f62000bb0848?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwxfHxncm91cCUyMG9mJTIwZGl2ZXJzZSUyMGdlbiUyMHolMjBmcmllbmRzJTIwaGF2aW5nJTIwZnVuJTIwbmlnaHQlMjBvdXQlMjBmbGFzaCUyMHBob3RvZ3JhcGh5JTIwYWVzdGhldGljfGVufDB8fHx8MTc3MTg0NjY4Mnww&ixlib=rb-4.1.0&q=85",
+        "description": "Diverse group of friends having fun, night out flash photography",
+        "category": "squad_hero"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1616189221633-c3e3acb720af?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwyfHxncm91cCUyMG9mJTIwZGl2ZXJzZSUyMGdlbiUyMHolMjBmcmllbmRzJTIwaGF2aW5nJTIwZnVuJTIwbmlnaHQlMjBvdXQlMjBmbGFzaCUyMHBob3RvZ3JhcGh5JTIwYWVzdGhldGljfGVufDB8fHx8MTc3MTg0NjY4Mnww&ixlib=rb-4.1.0&q=85",
+        "description": "Three women smiling near table, selfie style",
+        "category": "squad_feed"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1603479717970-9bc84b12ad09?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHw0fHxncm91cCUyMG9mJTIwZGl2ZXJzZSUyMGdlbiUyMHolMjBmcmllbmRzJTIwaGF2aW5nJTIwZnVuJTIwbmlnaHQlMjBvdXQlMjBmbGFzaCUyMHBob3RvZ3JhcGh5JTIwYWVzdGhldGljfGVufDB8fHx8MTc3MTg0NjY4Mnww&ixlib=rb-4.1.0&q=85",
+        "description": "Group walking on road at night, candid",
+        "category": "squad_feed"
+      }
+    ],
+    "profiles": [
+      {
+        "url": "https://images.unsplash.com/photo-1618698937393-8d7bb5f2d341?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxjb29sJTIwZ2VuJTIweiUyMGdpcmwlMjBuZW9uJTIwbGlnaHRpbmclMjBwb3J0cmFpdCUyMGdyYWlueSUyMGFlc3RoZXRpY3xlbnwwfHx8fDE3NzE4NDY2ODd8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Woman in purple/black plaid, neon lighting",
+        "category": "user_avatar"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1742163511210-0564f3018c86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwyfHxjb25jZXJ0JTIwY3Jvd2QlMjByYXZlJTIwbmVvbiUyMGxpZ2h0cyUyMGF0bW9zcGhlcmUlMjB2ZXJ0aWNhbHxlbnwwfHx8fDE3NzE4NDY2ODd8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Woman posing with neon light",
+        "category": "user_avatar"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1733069523650-21e13fa4daeb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwxfHxjb29sJTIwZ2VuJTIweiUyMGd1eSUyMHN0cmVldCUyMGZhc2hpb24lMjBwb3J0cmFpdCUyMGFlc3RoZXRpY3xlbnwwfHx8fDE3NzE4NDY2OTB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Man standing on sidewalk at night",
+        "category": "user_avatar"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1710182240446-8ae8c223e135?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwyfHxjb25jZXJ0JTIwZ2VuJTIweiUyMGd1eSUyMHN0cmVldCUyMGZhc2hpb24lMjBwb3J0cmFpdCUyMGFlc3RoZXRpY3xlbnwwfHx8fDE3NzE4NDY2OTB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Man in black hoodie, graffiti wall",
+        "category": "user_avatar"
+      }
+    ],
+    "atmosphere": [
+      {
+        "url": "https://images.unsplash.com/photo-1547336784-331eea969948?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxjb25jZXJ0JTIwY3Jvd2QlMjByYXZlJTIwbmVvbiUyMGxpZ2h0cyUyMGF0bW9zcGhlcmUlMjB2ZXJ0aWNhbHxlbnwwfHx8fDE3NzE4NDY2OTJ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract green/blue/red painting, vertical",
+        "category": "background_texture"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1767816433114-e26ba9143093?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwyfHxjb25jZXJ0JTIwY3Jvd2QlMjByYXZlJTIwbmVvbiUyMGxpZ2h0cyUyMGF0bW9zcGhlcmUlMjB2ZXJ0aWNhbHxlbnwwfHx8fDE3NzE4NDY2OTJ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Giant illuminated trees at night",
+        "category": "event_cover"
+      }
+    ]
+  },
+  "instructions_to_main_agent": {
+    "general": "You are building NEXUS, a high-energy social/dating hybrid. The vibe is 'Electric Midnight'. Use the provided colors and fonts strictly. Do not revert to default Tailwind colors.",
+    "layout_rules": [
+      "Always use 'container' class for page content wrappers.",
+      "Use 'grid-cols-1 md:grid-cols-3' for feed layouts.",
+      "Ensure all interactive elements have 'data-testid'.",
+      "Use 'backdrop-blur-xl' for all floating elements (navbars, modals)."
+    ],
+    "component_overrides": {
+      "Button": "Use rounded-full for all buttons. Primary buttons should have a subtle glow effect.",
+      "Card": "Cards should have a very subtle border (white/10) and a dark background (zinc-900/50).",
+      "Input": "Inputs should be 'h-12' for better touch targets."
+    },
+    "squad_dating_implementation": {
+      "card_stack": "Implement a tinder-like stack for squads, but show multiple avatars overlapping to indicate a group.",
+      "voting_ui": "When a user swipes right on a squad, show a 'Vote Cast' animation. The match only happens if the squad majority votes yes."
+    }
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use 'sonner' for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx"
+  ]
+}
