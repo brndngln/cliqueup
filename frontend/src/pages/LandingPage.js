@@ -31,7 +31,7 @@ export default function LandingPage() {
             {/* Header */}
             <header className="relative z-10 flex items-center justify-between px-6 py-4 lg:px-12">
                 <div className="flex items-center gap-2">
-                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-teal-500 flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-600 to-teal-600 flex items-center justify-center">
                         <Sparkles className="w-5 h-5 text-white" />
                     </div>
                     <span className="font-heading text-2xl font-bold">CliqUp</span>
@@ -56,7 +56,7 @@ export default function LandingPage() {
                     {/* Left content */}
                     <div className="space-y-8">
                         <div className="space-y-4">
-                            <span className="inline-block px-4 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-sm font-medium">
+                            <span className="inline-block px-4 py-1.5 rounded-full bg-teal-600/10 border border-teal-600/20 text-teal-400 text-sm font-medium">
                                 Social + Dating, Unified
                             </span>
                             <h1 className="font-heading text-5xl md:text-7xl font-bold tracking-tight leading-none">
@@ -70,11 +70,11 @@ export default function LandingPage() {
 
                         <div className="flex flex-wrap gap-4">
                             <Link to="/signup">
-                                <Button size="lg" className="rounded-full h-12 px-8 bg-primary hover:bg-primary/90 font-semibold tap-feedback" data-testid="hero-get-started-btn">
+                                <Button size="lg" className="rounded-full h-12 px-8 bg-pink-600 hover:bg-pink-700 font-semibold tap-feedback" data-testid="hero-get-started-btn">
                                     Get Started Free
                                 </Button>
                             </Link>
-                            <Button size="lg" variant="outline" className="rounded-full h-12 px-8 font-semibold" data-testid="learn-more-btn">
+                            <Button size="lg" variant="outline" className="rounded-full h-12 px-8 font-semibold border-teal-600 text-teal-400 hover:bg-teal-600/10" data-testid="learn-more-btn">
                                 Learn More
                             </Button>
                         </div>
@@ -101,7 +101,7 @@ export default function LandingPage() {
                         <div className="grid grid-cols-2 gap-4">
                             {/* Feature Card 1 */}
                             <div className="glass-card p-6 space-y-4 hover-lift">
-                                <div className="w-12 h-12 rounded-xl bg-teal-500/20 flex items-center justify-center">
+                                <div className="w-12 h-12 rounded-xl bg-teal-600/20 flex items-center justify-center">
                                     <Users className="w-6 h-6 text-teal-400" />
                                 </div>
                                 <h3 className="font-heading text-lg font-semibold">Squad Dating</h3>
@@ -110,7 +110,7 @@ export default function LandingPage() {
 
                             {/* Feature Card 2 */}
                             <div className="glass-card p-6 space-y-4 hover-lift mt-8">
-                                <div className="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center">
+                                <div className="w-12 h-12 rounded-xl bg-pink-600/20 flex items-center justify-center">
                                     <Heart className="w-6 h-6 text-pink-400" />
                                 </div>
                                 <h3 className="font-heading text-lg font-semibold">Meaningful Matches</h3>
@@ -119,8 +119,8 @@ export default function LandingPage() {
 
                             {/* Feature Card 3 */}
                             <div className="glass-card p-6 space-y-4 hover-lift">
-                                <div className="w-12 h-12 rounded-xl bg-gray-500/20 flex items-center justify-center">
-                                    <MessageCircle className="w-6 h-6 text-gray-400" />
+                                <div className="w-12 h-12 rounded-xl bg-teal-600/20 flex items-center justify-center">
+                                    <MessageCircle className="w-6 h-6 text-teal-400" />
                                 </div>
                                 <h3 className="font-heading text-lg font-semibold">Social First</h3>
                                 <p className="text-sm text-muted-foreground">Share posts, stories, and videos with your network.</p>
@@ -128,8 +128,8 @@ export default function LandingPage() {
 
                             {/* Feature Card 4 */}
                             <div className="glass-card p-6 space-y-4 hover-lift mt-8">
-                                <div className="w-12 h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center">
-                                    <Sparkles className="w-6 h-6 text-emerald-400" />
+                                <div className="w-12 h-12 rounded-xl bg-pink-600/20 flex items-center justify-center">
+                                    <Sparkles className="w-6 h-6 text-pink-400" />
                                 </div>
                                 <h3 className="font-heading text-lg font-semibold">Safe & Verified</h3>
                                 <p className="text-sm text-muted-foreground">Age verification and photo checks keep everyone safe.</p>
