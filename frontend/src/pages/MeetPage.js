@@ -356,7 +356,7 @@ export default function MeetPage() {
                     </div>
                     <h1 className="font-heading text-2xl font-bold">Meet is 18+ Only</h1>
                     <p className="text-muted-foreground">
-                        The dating features on NEXUS are only available to users who are 18 years or older.
+                        The dating features on CliqUp are only available to users who are 18 years or older.
                     </p>
                 </div>
             </MainLayout>
@@ -368,8 +368,8 @@ export default function MeetPage() {
         return (
             <MainLayout>
                 <div className="max-w-md mx-auto px-4 py-12 text-center space-y-6" data-testid="meet-verification">
-                    <div className="w-20 h-20 mx-auto rounded-full bg-indigo-500/20 flex items-center justify-center">
-                        <Shield className="w-10 h-10 text-indigo-400" />
+                    <div className="w-20 h-20 mx-auto rounded-full bg-teal-600/20 flex items-center justify-center">
+                        <Shield className="w-10 h-10 text-teal-400" />
                     </div>
                     <h1 className="font-heading text-2xl font-bold">Verify Your Age</h1>
                     <p className="text-muted-foreground">
@@ -377,7 +377,7 @@ export default function MeetPage() {
                     </p>
                     <Button 
                         size="lg" 
-                        className="rounded-full"
+                        className="rounded-full bg-teal-600 hover:bg-teal-700"
                         onClick={handleVerify}
                         disabled={verifying}
                         data-testid="verify-btn"
