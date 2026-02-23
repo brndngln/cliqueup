@@ -167,7 +167,7 @@ async def search(
     db = Database.get_db()
     
     # Search users
-    from ...core.database import Collections
+    from core.database import Collections
     users_cursor = db[Collections.USERS].find(
         {
             "$or": [
