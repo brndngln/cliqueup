@@ -5,11 +5,11 @@ from typing import Optional, List
 from fastapi import HTTPException, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
-from ...core.database import Collections
-from ...core.enums import NotificationType
-from ...utils.helpers import generate_id, utc_now_iso
-from .repository import ProfileRepository, FollowRepository
-from .schemas import ProfileUpdateRequest, ProfileResponse, FollowResponse
+from core.database import Collections
+from core.enums import NotificationType
+from utils.helpers import generate_id, utc_now_iso
+from modules.profiles.repository import ProfileRepository, FollowRepository
+from modules.profiles.schemas import ProfileUpdateRequest, ProfileResponse, FollowResponse
 
 
 class ProfileService:
