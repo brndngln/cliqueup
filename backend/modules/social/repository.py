@@ -5,8 +5,8 @@ from typing import Optional, Dict, Any, List
 from motor.motor_asyncio import AsyncIOMotorDatabase
 from datetime import datetime, timezone, timedelta
 
-from ...core.database import Collections
-from ...core.config import settings
+from core.database import Collections
+from core.config import settings
 
 
 class PostRepository:
