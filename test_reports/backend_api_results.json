@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-02-23T11:52:47.247367",
+  "total_tests": 15,
+  "passed_tests": 15,
+  "success_rate": 100.0,
+  "results": [
+    {
+      "test": "Login with test account",
+      "success": true,
+      "details": "Status: 200"
+    },
+    {
+      "test": "Get current user info",
+      "success": true,
+      "details": "Status: 200"
+    },
+    {
+      "test": "Get my profile",
+      "success": true,
+      "details": "Status: 200"
+    },
+    {
+      "test": "Update profile",
+      "success": true,
+      "details": "Status: 200"
+    },
+    {
+      "test": "Get meet status",
+      "success": true,
+      "details": "Status: 200"
+    },
+    {
+      "test": "Get my squads",
+      "success": true,
+      "details": "Status: 200"
+    },
+    {
+      "test": "Get matches",
+      "success": true,
+      "details": "Status: 200"
+    },
+    {
+      "test": "Get discovery squads",
+      "success": true,
+      "details": "Status: 200"
+    },
+    {
+      "test": "Create new post",
+      "success": true,
+      "details": "Status: 200"
+    },
+    {
+      "test": "Get created post",
+      "success": true,
+      "details": "Status: 200"
+    },
+    {
+      "test": "React to post",
+      "success": true,
+      "details": "Status: 200"
+    },
+    {
+      "test": "Get feed",
+      "success": true,
+      "details": "Status: 200"
+    },
+    {
+      "test": "Get explore posts",
+      "success": true,
+      "details": "Status: 200"
+    },
+    {
+      "test": "Get conversations",
+      "success": true,
+      "details": "Status: 200"
+    },
+    {
+      "test": "Get notifications",
+      "success": true,
+      "details": "Status: 200"
+    }
+  ]
+}
