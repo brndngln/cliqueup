@@ -4,9 +4,9 @@ Meet module - API router for dating features.
 from fastapi import APIRouter, Depends, Query
 from typing import List
 
-from ...core.database import Database
-from ...core.security import get_current_user
-from .schemas import (
+from core.database import Database
+from core.security import get_current_user
+from modules.meet.schemas import (
     MeetStatusResponse, AgeAssureResponse,
     DatingProfileRequest, DatingProfileResponse,
     SquadCreateRequest, SquadResponse,
@@ -15,7 +15,7 @@ from .schemas import (
     VoteRequest, VoteResponse,
     MatchResponse, DiscoverSquadResponse
 )
-from .service import (
+from modules.meet.service import (
     MeetAccessService, DatingProfileService, SquadService,
     DiscoveryService, SwipeService
 )
