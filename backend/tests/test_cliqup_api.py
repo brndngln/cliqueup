@@ -290,7 +290,8 @@ class TestProfiles:
         )
         assert response.status_code == 200
         data = response.json()
-        assert data["following"] == True
+        assert data["ok"] == True
+        assert data["action"] == "followed"
     
     def test_unfollow_user(self, authenticated_user):
         """Test DELETE /api/profiles/{user_id}/follow"""
@@ -319,7 +320,8 @@ class TestProfiles:
         )
         assert response.status_code == 200
         data = response.json()
-        assert data["following"] == False
+        assert data["ok"] == True
+        assert data["action"] == "unfollowed"
 
 
 class TestMeetDating:
@@ -624,7 +626,9 @@ class TestSocial:
         assert response.status_code == 200
         
         data = response.json()
-        assert data["reacted"] == True
+        assert data["ok"] == True
+        assert data["action"] == "added"
+        assert data["reaction_type"] == "like"
 
 
 class TestMessaging:
@@ -710,16 +714,16 @@ class TestMessaging:
         )
         conversation_id = dm_response.json()["id"]
         
-        # Send message
+        # Send message - schema uses 'body' not 'content'
         response = requests.post(
             f"{BASE_URL}/api/conversations/{conversation_id}/messages",
             headers=authenticated_user["headers"],
-            json={"content": "Hello, this is a test message!"}
+            json={"body": "Hello, this is a test message!"}
         )
         assert response.status_code == 200
         
         data = response.json()
-        assert data["content"] == "Hello, this is a test message!"
+        assert data["body"] == "Hello, this is a test message!"
         assert data["sender_id"] == authenticated_user["user_id"]
 
 
