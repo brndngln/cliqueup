@@ -98,7 +98,7 @@ const SquadDiscoveryCard = ({ squad, onSwipe, onVote }) => {
                 <Button 
                     size="lg" 
                     variant="outline" 
-                    className="rounded-full w-14 h-14 p-0 border-destructive text-destructive hover:bg-destructive hover:text-white"
+                    className="rounded-full w-14 h-14 p-0 border-gray-500 text-gray-400 hover:bg-gray-600 hover:text-white"
                     onClick={() => onSwipe(squad.id, 'pass')}
                     data-testid={`pass-btn-${squad.id}`}
                 >
@@ -106,11 +106,19 @@ const SquadDiscoveryCard = ({ squad, onSwipe, onVote }) => {
                 </Button>
                 <Button 
                     size="lg" 
-                    className="rounded-full w-16 h-16 p-0 bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 neon-glow-pink"
+                    className="rounded-full w-16 h-16 p-0 bg-gradient-to-r from-pink-600 to-pink-700 hover:from-pink-700 hover:to-pink-800 neon-glow-pink"
                     onClick={() => onSwipe(squad.id, 'like')}
                     data-testid={`like-btn-${squad.id}`}
                 >
                     <Heart className="w-7 h-7" />
+                </Button>
+                <Button 
+                    size="lg" 
+                    variant="outline" 
+                    className="rounded-full w-14 h-14 p-0 border-teal-600 text-teal-400 hover:bg-teal-600 hover:text-white"
+                    onClick={() => onSwipe(squad.id, 'like')}
+                >
+                    <Sparkles className="w-6 h-6" />
                 </Button>
             </div>
         </Card>
