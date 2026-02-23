@@ -23,8 +23,8 @@
 }
 
 .card-interactive:hover {
-    border-color: rgba(99, 102, 241, 0.5);
-    box-shadow: 0 0 30px -10px rgba(99, 102, 241, 0.3);
+    border-color: rgba(20, 184, 166, 0.5);
+    box-shadow: 0 0 30px -10px rgba(20, 184, 166, 0.3);
 }
 
 /* Button glow effect */
@@ -81,7 +81,7 @@
 
 /* Story ring */
 .story-ring {
-    background: linear-gradient(45deg, #6366F1, #EC4899, #6366F1);
+    background: linear-gradient(45deg, #EC4899, #14B8A6, #EC4899);
     padding: 2px;
     border-radius: 50%;
 }
@@ -145,7 +145,7 @@
     transform: translateX(-50%);
     width: 4px;
     height: 4px;
-    background: #6366F1;
+    background: #EC4899;
     border-radius: 50%;
 }
 
@@ -156,7 +156,7 @@
 }
 
 .message-bubble-own {
-    background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+    background: linear-gradient(135deg, #EC4899 0%, #DB2777 100%);
 }
 
 .message-bubble-other {

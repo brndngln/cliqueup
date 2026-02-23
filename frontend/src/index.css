@@ -6,31 +6,31 @@
 
 @layer base {
     :root {
-        --background: 240 10% 3.9%;
+        --background: 0 0% 0%;
         --foreground: 0 0% 98%;
-        --card: 240 10% 7%;
+        --card: 0 0% 8%;
         --card-foreground: 0 0% 98%;
-        --popover: 240 10% 3.9%;
+        --popover: 0 0% 5%;
         --popover-foreground: 0 0% 98%;
-        --primary: 239 84% 67%;
+        --primary: 330 85% 60%;
         --primary-foreground: 0 0% 100%;
-        --secondary: 330 81% 60%;
+        --secondary: 174 72% 50%;
         --secondary-foreground: 0 0% 100%;
-        --muted: 240 4% 16%;
-        --muted-foreground: 240 5% 65%;
-        --accent: 240 4% 16%;
+        --muted: 0 0% 15%;
+        --muted-foreground: 0 0% 60%;
+        --accent: 0 0% 18%;
         --accent-foreground: 0 0% 98%;
         --destructive: 0 84% 60%;
         --destructive-foreground: 0 0% 98%;
-        --border: 240 4% 16%;
-        --input: 240 4% 16%;
-        --ring: 239 84% 67%;
+        --border: 0 0% 18%;
+        --input: 0 0% 15%;
+        --ring: 330 85% 60%;
         --radius: 0.75rem;
-        --chart-1: 220 70% 50%;
-        --chart-2: 160 60% 45%;
-        --chart-3: 30 80% 55%;
-        --chart-4: 280 65% 60%;
-        --chart-5: 340 75% 55%;
+        --chart-1: 330 85% 60%;
+        --chart-2: 174 72% 50%;
+        --chart-3: 0 0% 50%;
+        --chart-4: 330 70% 70%;
+        --chart-5: 174 60% 60%;
     }
 }
 
@@ -67,27 +67,35 @@
     }
     
     .text-gradient-social {
-        @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400;
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-turquoise-400 to-cyan-400;
     }
     
     .text-gradient-dating {
         @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-rose-400;
     }
     
+    .text-gradient-brand {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-pink-300 to-turquoise-400;
+    }
+    
     .glass {
-        @apply bg-black/40 backdrop-blur-xl border border-white/10;
+        @apply bg-black/60 backdrop-blur-xl border border-white/10;
     }
     
     .glass-card {
-        @apply bg-zinc-900/50 backdrop-blur-md border border-white/5 rounded-xl;
+        @apply bg-zinc-900/70 backdrop-blur-md border border-white/5 rounded-xl;
     }
     
     .neon-glow {
-        box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+        box-shadow: 0 0 20px rgba(20, 184, 166, 0.5);
     }
     
     .neon-glow-pink {
         box-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+    }
+    
+    .neon-glow-turquoise {
+        box-shadow: 0 0 20px rgba(20, 184, 166, 0.5);
     }
     
     .hover-lift {
