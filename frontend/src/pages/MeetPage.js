@@ -182,7 +182,7 @@ const MatchCard = ({ match, onClick }) => {
                     {match.members.slice(0, 4).map((member, i) => (
                         <Avatar key={i} className="w-10 h-10 border-2 border-background">
                             <AvatarImage src={member.avatar_url} />
-                            <AvatarFallback className="bg-pink-500/20 text-pink-400 text-xs">
+                            <AvatarFallback className="bg-teal-600/20 text-teal-400 text-xs">
                                 {member.display_name?.[0]}
                             </AvatarFallback>
                         </Avatar>
@@ -198,7 +198,7 @@ const MatchCard = ({ match, onClick }) => {
                     </p>
                 </div>
                 
-                <Button variant="ghost" size="icon" className="rounded-full shrink-0">
+                <Button variant="ghost" size="icon" className="rounded-full shrink-0 text-teal-400 hover:text-teal-300">
                     <MessageCircle className="w-5 h-5" />
                 </Button>
             </div>
