@@ -1,34 +1,234 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
+/* NEXUS App Styles - Electric Midnight Theme */
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #0f0f10;
+/* Remove default center alignment */
+.App {
     min-height: 100vh;
+}
+
+/* Page transitions */
+.page-enter {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+
+/* Card hover effects */
+.card-interactive {
+    transition: border-color 300ms ease, box-shadow 300ms ease;
+}
+
+.card-interactive:hover {
+    border-color: rgba(99, 102, 241, 0.5);
+    box-shadow: 0 0 30px -10px rgba(99, 102, 241, 0.3);
+}
+
+/* Button glow effect */
+.btn-glow {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-glow::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn-glow:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Swipe card animations */
+.swipe-card {
+    transition: transform 0.3s ease;
+}
+
+.swipe-card.swiping-left {
+    transform: translateX(-100px) rotate(-10deg);
+    opacity: 0;
+}
+
+.swipe-card.swiping-right {
+    transform: translateX(100px) rotate(10deg);
+    opacity: 0;
+}
+
+/* Avatar stack */
+.avatar-stack {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
 }
 
-.App-link {
-    color: #61dafb;
+.avatar-stack > * {
+    margin-left: -12px;
+    border: 2px solid #09090B;
 }
 
-@keyframes App-logo-spin {
+.avatar-stack > *:first-child {
+    margin-left: 0;
+}
+
+/* Story ring */
+.story-ring {
+    background: linear-gradient(45deg, #6366F1, #EC4899, #6366F1);
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.story-ring-viewed {
+    background: #27272A;
+}
+
+/* Feed post animations */
+.feed-post {
+    animation: fadeSlideIn 0.4s ease-out;
+    animation-fill-mode: both;
+}
+
+.feed-post:nth-child(1) { animation-delay: 0ms; }
+.feed-post:nth-child(2) { animation-delay: 50ms; }
+.feed-post:nth-child(3) { animation-delay: 100ms; }
+.feed-post:nth-child(4) { animation-delay: 150ms; }
+.feed-post:nth-child(5) { animation-delay: 200ms; }
+
+@keyframes fadeSlideIn {
     from {
-        transform: rotate(0deg);
+        opacity: 0;
+        transform: translateY(20px);
     }
     to {
-        transform: rotate(360deg);
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Match celebration */
+.match-celebration {
+    animation: matchPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes matchPop {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Navigation active state */
+.nav-item-active {
+    position: relative;
+}
+
+.nav-item-active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background: #6366F1;
+    border-radius: 50%;
+}
+
+/* Message bubble */
+.message-bubble {
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message-bubble-own {
+    background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+}
+
+.message-bubble-other {
+    background: #27272A;
+}
+
+/* Typing indicator */
+.typing-indicator span {
+    animation: typingBounce 1.4s infinite ease-in-out;
+}
+
+.typing-indicator span:nth-child(1) { animation-delay: 0s; }
+.typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typingBounce {
+    0%, 60%, 100% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-4px);
+    }
+}
+
+/* Reaction animation */
+.reaction-pop {
+    animation: reactionPop 0.3s ease-out;
+}
+
+@keyframes reactionPop {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Loading skeleton shimmer */
+.skeleton-shimmer {
+    background: linear-gradient(
+        90deg,
+        #27272A 0%,
+        #3F3F46 50%,
+        #27272A 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Badge pulse for notifications */
+.badge-pulse {
+    animation: badgePulse 2s infinite;
+}
+
+@keyframes badgePulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
     }
 }
