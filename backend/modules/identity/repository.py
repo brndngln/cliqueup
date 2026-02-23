@@ -4,7 +4,7 @@ Identity module - Repository for user data access.
 from typing import Optional, Dict, Any
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
-from ...core.database import Collections
+from core.database import Collections
 
 
 class UserRepository:
