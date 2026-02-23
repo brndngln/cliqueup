@@ -4,16 +4,16 @@ Social module - API router for posts, stories, and interactions.
 from fastapi import APIRouter, Depends, Query
 from typing import List
 
-from ...core.database import Database
-from ...core.security import get_current_user
-from .schemas import (
+from core.database import Database
+from core.security import get_current_user
+from modules.social.schemas import (
     PostCreateRequest, PostResponse, ReactionRequest, ReactionResponse,
     CommentCreateRequest, CommentResponse,
     StoryCreateRequest, StoryResponse, StoryGroupResponse,
     SearchResponse
 )
-from .service import PostService, CommentService, StoryService
-from .repository import PostRepository
+from modules.social.service import PostService, CommentService, StoryService
+from modules.social.repository import PostRepository
 
 router = APIRouter(tags=["Social"])
 
