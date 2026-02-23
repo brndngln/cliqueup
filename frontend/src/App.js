@@ -41,7 +41,7 @@ const PublicRoute = ({ children }) => {
     if (loading) {
         return (
             <div className="min-h-screen bg-background flex items-center justify-center">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-pink-500 animate-pulse" />
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-teal-500 animate-pulse" />
             </div>
         );
     }
