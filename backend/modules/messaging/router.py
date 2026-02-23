@@ -4,13 +4,13 @@ Messaging module - API router for conversations and messages.
 from fastapi import APIRouter, Depends, Query
 from typing import List, Optional
 
-from ...core.database import Database
-from ...core.security import get_current_user
-from .schemas import (
+from core.database import Database
+from core.security import get_current_user
+from modules.messaging.schemas import (
     ConversationResponse, MessageResponse,
     MessageCreateRequest, ConversationCreateRequest
 )
-from .service import MessagingService
+from modules.messaging.service import MessagingService
 
 router = APIRouter(prefix="/conversations", tags=["Messaging"])
 
