@@ -5,12 +5,12 @@ from typing import Optional
 from fastapi import HTTPException, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
-from ...core.security import hash_password, verify_password, create_access_token
-from ...core.config import settings
-from ...core.enums import UserStatus, DatingTier, DatingLinkMode
-from ...utils.helpers import generate_id, utc_now_iso, compute_age_band
-from .repository import UserRepository
-from .schemas import SignupRequest, LoginRequest, UserResponse, TokenResponse
+from core.security import hash_password, verify_password, create_access_token
+from core.config import settings
+from core.enums import UserStatus, DatingTier, DatingLinkMode
+from utils.helpers import generate_id, utc_now_iso, compute_age_band
+from modules.identity.repository import UserRepository
+from modules.identity.schemas import SignupRequest, LoginRequest, UserResponse, TokenResponse
 
 
 class AuthService:
