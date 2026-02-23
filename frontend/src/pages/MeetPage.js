@@ -55,7 +55,7 @@ const SquadDiscoveryCard = ({ squad, onSwipe, onVote }) => {
                         className="w-full h-full object-cover"
                     />
                 ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-indigo-500/20 to-pink-500/20 flex items-center justify-center">
+                    <div className="w-full h-full bg-gradient-to-br from-teal-600/20 to-pink-600/20 flex items-center justify-center">
                         <Users className="w-20 h-20 text-muted-foreground" />
                     </div>
                 )}
@@ -64,7 +64,7 @@ const SquadDiscoveryCard = ({ squad, onSwipe, onVote }) => {
                 
                 {/* Squad indicator */}
                 <div className="absolute top-4 left-4 flex items-center gap-2">
-                    <Badge className="bg-teal-500/80 text-white border-0">
+                    <Badge className="bg-teal-600/80 text-white border-0">
                         <Users className="w-3 h-3 mr-1" />
                         {squad.member_count} members
                     </Badge>
