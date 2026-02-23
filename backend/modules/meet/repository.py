@@ -4,7 +4,7 @@ Meet module - Repository for dating data access.
 from typing import Optional, Dict, Any, List
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
-from ...core.database import Collections
+from core.database import Collections
 
 
 class MeetAccessRepository:
