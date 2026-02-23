@@ -6,20 +6,20 @@ from typing import Optional, List
 from fastapi import HTTPException, status
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
-from ...core.database import Collections
-from ...core.config import settings
-from ...core.enums import (
+from core.database import Collections
+from core.config import settings
+from core.enums import (
     AgeBand, DatingTier, SquadMemberRole, InviteStatus,
     SwipeDirection, SwipeOutcome, VoteType, ConversationType, NotificationType
 )
-from ...utils.helpers import generate_id, utc_now_iso, get_squad_cap, get_required_likes
-from ...utils.elo import EloRating
-from .repository import (
+from utils.helpers import generate_id, utc_now_iso, get_squad_cap, get_required_likes
+from utils.elo import EloRating
+from modules.meet.repository import (
     MeetAccessRepository, DatingProfileRepository, SquadRepository,
     SquadMemberRepository, SquadInviteRepository, SwipeRepository,
     VoteRepository, MatchRepository
 )
-from .schemas import (
+from modules.meet.schemas import (
     MeetStatusResponse, AgeAssureResponse, DatingProfileRequest, DatingProfileResponse,
     SquadCreateRequest, SquadResponse, SquadMemberResponse,
     SquadInviteRequest, SquadInviteResponse,
