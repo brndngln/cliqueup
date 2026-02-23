@@ -2,7 +2,7 @@
 Elo Rating System for squad matching algorithm.
 Inspired by chess rankings, adapted for squad-based dating.
 """
-from ..core.config import settings
+from core.config import settings
 
 
 class EloRating:
