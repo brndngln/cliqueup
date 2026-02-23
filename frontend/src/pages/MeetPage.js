@@ -435,9 +435,9 @@ export default function MeetPage() {
 
                 {/* Invites */}
                 {invites.length > 0 && (
-                    <Card className="glass-card p-4 border-amber-500/20 bg-amber-500/5">
+                    <Card className="glass-card p-4 border-teal-600/20 bg-teal-600/5">
                         <h3 className="font-semibold mb-3 flex items-center gap-2">
-                            <UserPlus className="w-4 h-4 text-amber-400" />
+                            <UserPlus className="w-4 h-4 text-teal-400" />
                             Pending Invites ({invites.length})
                         </h3>
                         <div className="space-y-2">
@@ -451,14 +451,14 @@ export default function MeetPage() {
                                         <Button 
                                             size="sm" 
                                             variant="outline" 
-                                            className="rounded-full"
+                                            className="rounded-full border-gray-500"
                                             onClick={() => handleDeclineInvite(invite)}
                                         >
                                             <X className="w-4 h-4" />
                                         </Button>
                                         <Button 
                                             size="sm" 
-                                            className="rounded-full"
+                                            className="rounded-full bg-teal-600 hover:bg-teal-700"
                                             onClick={() => handleAcceptInvite(invite)}
                                             data-testid={`accept-invite-${invite.id}`}
                                         >
