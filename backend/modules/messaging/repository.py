@@ -4,7 +4,7 @@ Messaging module - Repository for conversations and messages.
 from typing import Optional, Dict, Any, List
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
-from ...core.database import Collections
+from core.database import Collections
 
 
 class ConversationRepository:
