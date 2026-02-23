@@ -85,7 +85,7 @@ class ConversationMemberRepository:
                 })
                 if count == 2:
                     # Check conversation type
-                    from ...core.database import Collections
+                    from core.database import Collections
                     conv_doc = await self.db[Collections.CONVERSATIONS].find_one({
                         "id": conv["conversation_id"],
                         "type": "dm"
