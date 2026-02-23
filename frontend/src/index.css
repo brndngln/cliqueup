@@ -67,7 +67,7 @@
     }
     
     .text-gradient-social {
-        @apply bg-clip-text text-transparent bg-gradient-to-r from-turquoise-400 to-cyan-400;
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-cyan-400;
     }
     
     .text-gradient-dating {
@@ -75,7 +75,7 @@
     }
     
     .text-gradient-brand {
-        @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-pink-300 to-turquoise-400;
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-pink-300 to-teal-400;
     }
     
     .glass {
